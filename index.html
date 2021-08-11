@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        function favTutorial() {
+            var mylist = document.getElementById("myList");
+            document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;
+        }
+        function setColor1(btn, color) {
+            var count = 1;
+            var property = document.getElementById("button1");
+            if (count == 0) {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 1;
+            }
+            else {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 0;
+            }
+        }
+        function setColor2(btn, color) {
+            var count = 1;
+            var property = document.getElementById("button2");
+            if (count == 0) {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 1;
+            }
+            else {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 0;
+            }
+        }
+        function setColor3(btn, color) {
+            var count = 1;
+            var property = document.getElementById("button3");
+            if (count == 0) {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 1;
+            }
+            else {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 0;
+            }
+        }
+        function setColor4(btn, color) {
+            var count = 1;
+            var property = document.getElementById("button4");
+            if (count == 0) {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 1;
+            }
+            else {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 0;
+            }
+        }
+        function setColor5(btn, color) {
+            var count = 1;
+            var property = document.getElementById("button5");
+            if (count == 0) {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 1;
+            }
+            else {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 0;
+            }
+        }
+        function setColor6(btn, color) {
+            var count = 1;
+            var property = document.getElementById("button6");
+            if (count == 0) {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 1;
+            }
+            else {
+                property.style.backgroundColor = "#5a5b6a"
+                property.style.color = "white"
+                count = 0;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="shokaa-main-container">
+        <nav class="navbar navbar-expand-lg navbar-light nav-cont ">
+            <a class="navbar-brand d-flex flex-row " href="#">
+                <img src="./images/Logo.png" class="navbar-image logo-image" alt="" />
+                <p class="logo-name mt-auto ">Shopka</p>
+            </a>
+            <button class="navbar-toggler order-1" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto ">
+                    <a class="nav-link active nav-bar-content" href="#">
+                        New In <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link nav-bar-content" href="#">Clothing</a>
+                    <a class="nav-link nav-bar-content" href="#">Shoes</a>
+                    <a class="nav-link nav-bar-content" href="#">Accessories</a>
+                    <a class="nav-link nav-bar-content" href="#">More</a>
+                </div>
+            </div>
+            <div class="input-group rounded search-bar-cont">
+                <input type="search" class="form-control rounded input-search-cont" placeholder="Search"
+                    aria-label="Search" aria-describedby="search-addon" />
+                <span class="input-group-text border-0 search_color" id="search-addon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </span>
+            </div>
+        </nav>
+        <div class="Item-container-i container-fluid d-flex flex-row">
+            <div class="left_side_bar col-lg-3 col-sm-3 d-none d-md-block">
+                <div class="inside-left-side-bar d-flex flex-column justify-content-centre">
+                    <div class="department-container mb-4">Departments</div>
+                    <div class="option-tab ">
+                        <select class="list_option ml-4 mb-3" id="dropdown">
+                            <div class="sub-menu">
+                                <option class="opt1">Categories</option>
+                                <option class="opt1">Electronics</option>
+                                <option class="opt1">Business</option>
+                                <option class="opt1">Ecommerce</option>
+                            </div>
+                        </select>
+                    </div>
+                    <div class="option-tab ">
+                        <select class="list_option ml-4 mb-3" id="dropdown">
+                            <div class="sub-menu">
+                                <option class="opt1">Ecommerce</option>
+                                <option class="opt1">Flipkart</option>
+                                <option class="opt1">Amazon</option>
+                                <option class="opt1">Alibaba</option>
+                            </div>
+                        </select>
+                    </div>
+                    <div class="option-tab ">
+                        <select class="list_option ml-4 mb-3" id="dropdown">
+                            <div class="sub-menu">
+                                <option class="opt1">Laptops</option>
+                                <option class="opt1">Acer</option>
+                                <option class="opt1">Asus</option>
+                                <option class="opt1">HP Laptop</option>
+                            </div>
+                        </select>
+                    </div>
+                    <div class="option-tab ">
+                        <select class="list_option ml-4 mb-3" id="dropdown">
+                            <div class="sub-menu">
+                                <option class="opt1">Business</option>
+                                <option class="opt1">Component</option>
+                                <option class="opt1">Sensors</option>
+                                <option class="opt1">Applications</option>
+                            </div>
+                        </select>
+                    </div>
+                    <div class="option-tab ">
+                        <select class="list_option ml-4 mb-3" id="dropdown">
+                            <div class="sub-menu">
+                                <option class="opt1">Garden Tools</option>
+                                <option class="opt1">Groceries</option>
+                                <option class="opt1">Spades</option>
+                                <option class="opt1">Machinery</option>
+                            </div>
+                        </select>
+                    </div>
+                    <div class="option-tab ">
+                        <select class="list_option ml-4 mb-3" id="dropdown">
+                            <div class="sub-menu">
+                                <option class="opt1">Tv Radio</option>
+                                <option class="opt1">Batteries</option>
+                                <option class="opt1">Walkman</option>
+                                <option class="opt1">Goods</option>
+                            </div>
+                        </select>
+                    </div>
+                    <div class="option-tab ">
+                        <select class="list_option ml-4 mb-3" id="dropdown">
+                            <div class="sub-menu">
+                                <option class="opt1">Collectibles</option>
+                                <option class="opt1">Purse</option>
+                                <option class="opt1">wallets</option>
+                                <option class="opt1">belts</option>
+                            </div>
+                        </select>
+                    </div>
+                    <div class="collapse-filter pb-4 pr-4">
+                        <form class="filter-container ml-4 pl-4">
+                            <div class="EFl pt-3">Expanded Filters</div>
+                            <div class="EFL2">
+                                <input type="checkbox" id="vehicle" name="vehicle1" value="Bike">
+                                <label class="check" for="vehicle1">Recommended</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle2" value="Car">
+                                <label class="check" for="vehicle2">Recently Added</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle3" value="Car">
+                                <label class="check" for="vehicle3">Expiring soon</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle4" value="Car">
+                                <label class="check" for="vehicle4">Most Rated</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle5" value="Boat">
+                                <label class="check" for="vehicle5">Price : High to Low</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle6" value="Boat">
+                                <label class="check" for="vehicle6">Price : Low to High</label><br><br>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="collapse-filter ml-4 pr-4">
+                        <form class="filter-container pt-4 pl-4">
+                            <div class="EFl">Manufacturing Year</div>
+                            <div class="EFL2">
+                                <input type="checkbox" id="vehicle" name="vehicle1" value="Bike">
+                                <label class="check" for="vehicle1">1954</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle2" value="Car">
+                                <label class="check" for="vehicle2">1955</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle3" value="Car">
+                                <label class="check" for="vehicle3">1956</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle4" value="Car">
+                                <label class="check" for="vehicle4">1957</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle5" value="Boat">
+                                <label class="check" for="vehicle5">1958</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle6" value="Boat">
+                                <label class="check" for="vehicle6">1959</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle7" value="Boat">
+                                <label class="check" for="vehicle7">1960</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle8" value="Boat">
+                                <label class="check" for="vehicle8">1961</label><br>
+                                <input type="checkbox" id="vehicle" name="vehicle9" value="Boat">
+                                <label class="check" for="vehicle9">1961-2020</label><br><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="main-card-container container-fluid col-lg-9 col-sm-8 mb-4">
+                <div class="col-lg-9">
+                    <div class="options-container d-flex flex-row justify-content-start mt-4">
+                        <div class="option-tab1 ">
+                            <select class="list_option1  mb-3" id="dropdown1">
+                                <div class="sub-menu">
+                                    <option class="opt1" id="list_opt">Usefully first</option>
+                                    <option class="opt1" id="list_opt">Secondary</option>
+                                    <option class="opt1" id="list_opt">Need Third</option>
+                                    <option class="opt1" id="list_opt">Some Fourth</option>
+                                </div>
+                            </select>
+                        </div>
+                        <div class="option-tab1 ">
+                            <select class="list_option1 mb-3" id="dropdown1">
+                                <div class="sub-menu">
+                                    <option class="opt1" id="list_opt">Condition Use</option>
+                                    <option class="opt1" id="list_opt">Lay Idle</option>
+                                    <option class="opt1" id="list_opt">Was Used</option>
+                                    <option class="opt1" id="list_opt">Shabby</option>
+                                </div>
+                            </select>
+                        </div>
+                        <div class="option-tab1 ">
+                            <select class="list_option1 mb-3" id="dropdown1">
+                                <div class="sub-menu">
+                                    <option class="opt1" id="list_opt">Delivery Options</option>
+                                    <option class="opt1" id="list_opt">Post</option>
+                                    <option class="opt1" id="list_opt">Pickup</option>
+                                    <option class="opt1" id="list_opt">Space</option>
+                                </div>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="Dropdown-Btns d-flex flex-row mt-4 ">
+                        <div class="drop"><button class="show1">Show</button></div>
+                        <div class="drop"><button class="show1">Action</button></div>
+                        <div class="drop"><button class="show1">Buy</button></div>
+                        <div class="col-lg-6 d-flex flex-row">
+                            <div class="view-list">
+                                <img class="list-view" src="./images/view-list.png" alt="view">
+                            </div>
+                            <div class="view-cont">
+                                <img class="view-grid" src="./images/view-grid.png" alt="view">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-3">
+                    <div class="select-options">
+                        <form class="option-form" action="#">
+                            <label class="related" for="fname">Related</label>
+                            <input class="world" type="button" id="button1" value="Wordwide Shipping"
+                                onclick="setColor1('button', '#5a5b6a')" ; />
+                            <input class="world" type="button" id="button2" value="Under $50"
+                                onclick="setColor2('button', '#5a5b6a')" ; />
+                            <input class="world" type="button" id="button3" value="kitten"
+                                onclick="setColor3('button', '#5a5b6a')" ; />
+                            <input class="world" type="button" id="button4" value="plastic plugs"
+                                onclick="setColor4('button', '#5a5b6a')" ; />
+                            <input class="world" type="button" id="button5" value="pucker shoes"
+                                onclick="setColor5('button', '#5a5b6a')" ; />
+                            <input class="world" type="button" id="button6" value="vintage typewriter"
+                                onclick="setColor6('button', '#5a5b6a')" ; />
+                        </form>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex flex-column mt-4">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-1.png" alt="">
+                            <p class="item-content">Simply best item in town to shine bright with your Nine Inch
+                                Nails</p>
+                            <p class="price-tag pt-xl-0">$1.25</p>
+                            <p class="item-subcontent">Eligible for Shipping To Mars or somewhere else</p>
+                            <div class="Item-rating container-fluid d-flex flex-row pt-md-3 pt-xl-0">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.77</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3  p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-2.png" alt="">
+                            <p class="item-content">One string Bonsai description</p>
+                            <p class="price-tag pt-lg-4 pt-md-4">$11.25</p>
+                            <p class="item-subcontent">Wordwide shifting available
+                                Buyers protection possible!</p>
+                            <div class="Item-rating container-fluid d-flex flex-row">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.99</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3  p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-3.png" alt="">
+                            <p class="item-content">Professional teadrinking set for every designer and
+                                developer</p>
+                            <p class="price-tag">$128.99</p>
+                            <p class="item-subcontent">Eligible for nothing :(</p>
+                            <div class="Item-rating container-fluid d-flex flex-row pt-lg-3">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.99</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3  p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-4.png" alt="">
+                            <p class="item-content">Envelope, Stripes, Pencil and etc. Purchase this kit today
+                                and feel</p>
+                            <p class="price-tag">$9.25</p>
+                            <p class="item-subcontent">Eligible for Shipping To Mars or somewhere else</p>
+                            <div class="Item-rating container-fluid d-flex flex-row">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.77</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-5.png" alt="">
+                            <p class="item-content">John Von Ebalkin SPRING </p>
+                            <p class="price-tag pt-lg-5 pt-md-4 pt-xl-5">$11.25</p>
+                            <p class="item-subcontent">1258 bids, 359 watchers
+                                $5.95 for shipping</p>
+                            <div class="Item-rating container-fluid d-flex flex-row pt-lg-4">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.56</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-6.png" alt="">
+                            <p class="item-content">Prototyping items to create a lot if useless things...</p>
+                            <p class="price-tag pt-lg-4">$128.25</p>
+                            <p class="item-subcontent">Showcasing onHovered state</p>
+                            <div class="Item-rating container-fluid d-flex flex-row pt-lg-4">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.87</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-7.png" alt="">
+                            <p class="item-content">Creativity stimulating lotion. Drink every morning to
+                                generate better
+                                ideas!</p>
+                            <p class="price-tag pt-lg-1">$12.25</p>
+                            <p class="item-subcontent">Wordwide shifting available
+                                Buyers protection possible!</p>
+                            <div class="Item-rating container-fluid d-flex flex-row">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.52</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-8.png" alt="">
+                            <p class="item-content">Plastic useless plugs and tubes for high-fidelity
+                                prototyping. Fit &
+                                Eat!</p>
+                            <p class="price-tag pt-lg-2 pt-md-4">$12.45</p>
+                            <p class="item-subcontent">Wordwide shitting available
+                                Buyers protection possible!</p>
+                            <div class="Item-rating container-fluid d-flex flex-row">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.99</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-9.png" alt="">
+                            <p class="item-content">Timesaving kitten to save months on development. Playful,
+                                cute, cheap!
+                            </p>
+                            <p class="price-tag">$128.99</p>
+                            <p class="item-subcontent">Eligible for nothing :(</p>
+                            <div class="Item-rating container-fluid d-flex flex-row">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.99</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-10.png" alt="">
+                            <p class="item-content">Lee Pucker design. Leather botinki for handsome designers.
+                                Free
+                                shipping.</p>
+                            <p class="price-tag">$13.25</p>
+                            <p class="item-subcontent">1258 bids, 359 watchers
+                                $5.95 for shipping</p>
+                            <div class="Item-rating container-fluid d-flex flex-row">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.77</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image-11.png" alt="">
+                            <p class="item-content">Vintage Typewriter to post awesome stories about UI design
+                                and webdev.
+                            </p>
+                            <p class="price-tag pt-md-4 pt-xl-0">$49.25</p>
+                            <p class="item-subcontent">Eligible for Shipping To Mars or somewhere</p>
+                            <div class="Item-rating container-fluid d-flex flex-row ">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.99</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 Card-Container">
+                            <img class="item-image-container" src="./images/Image.png" alt="">
+                            <p class="item-content">KISTOCHKI & KRASIBO. Top cosmetics brand from Chelyabinsk is
+                                here!</p>
+                            <p class="price-tag">$23.25</p>
+                            <p class="item-subcontent">1258 bids, 359 watchers
+                                $5.95 for shipping</p>
+                            <div class="Item-rating container-fluid d-flex flex-row">
+                                <div class="row">
+                                    <img class="star" src="./images/star.png" alt="">
+                                    <img class="star-1" src="./images/star.png" alt="">
+                                    <img class="star-2" src="./images/star.png" alt="">
+                                    <img class="star-3" src="./images/star.png" alt="">
+                                    <img class="star-half" src="./images/star.png" alt="">
+                                    <div class="Item-rating pl-3 pr-3">4.56</div>
+                                    <div class="Watch_button d-flex flex-row">
+                                        <div class="heart_symbol ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-heart ml-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <div class="watch_class">
+                                            WATCH
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid footer_boxes mt-4">
+                        <div class="footer-container">
+                            <div class="footer-clear">
+                                <img class="footer-image" src="./images/lightbulb-on-outline.png"
+                                    alt="lightbulb-on-outline">
+                                <h4 class="footer-head">Clear & Usable user flows</h4>
+                                <p class="footer-content">Let’s boost yout marketplace</p>
+                            </div>
+                            <div class="footer-fine">
+                                <img class="footer-image" src="./images/auto-fix.png" alt="lightbulb-on-outline">
+                                <h4 class="footer-head">Fine & Styled components</h4>
+                                <p class="footer-content">Speed up with Setproduct templates</p>
+                            </div>
+                            <div class="footer-custom">
+                                <img class="footer-image" src="./images/palette.png" alt="lightbulb-on-outline">
+                                <h4 class="footer-head">Customizable & Reusable</h4>
+                                <p class="footer-content">Take our UX patterns and rebuild</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
